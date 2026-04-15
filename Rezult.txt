@@ -1,0 +1,68 @@
+pelen@Liza_fox MINGW64 ~
+$ cd /c/Vtoroi/
+
+pelen@Liza_fox MINGW64 /c/Vtoroi (master)
+$ git init
+Reinitialized existing Git repository in C:/Vtoroi/.git/
+
+pelen@Liza_fox MINGW64 /c/Vtoroi (master)
+$ ls -a
+./  ../  .git/
+
+pelen@Liza_fox MINGW64 /c/Vtoroi (master)
+$ git remote add origin https://github.com/Liza0809/Vtoroi.git
+
+pelen@Liza_fox MINGW64 /c/Vtoroi (master)
+$ git remote -v
+origin  https://github.com/Liza0809/Vtoroi.git (fetch)
+origin  https://github.com/Liza0809/Vtoroi.git (push)
+
+pelen@Liza_fox MINGW64 /c/Vtoroi (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+pelen@Liza_fox MINGW64 /c/Vtoroi (master)
+$ git add Rezult.txt
+
+pelen@Liza_fox MINGW64 /c/Vtoroi (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Rezult.txt
+
+
+pelen@Liza_fox MINGW64 /c/Vtoroi (master)
+$ git commit -m "Создала файл Rezult.txt"
+[master (root-commit) e0f807e] Создала файл Rezult.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Rezult.txt
+
+pelen@Liza_fox MINGW64 /c/Vtoroi (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 261 bytes | 130.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Liza0809/Vtoroi/pull/new/master
+remote:
+To https://github.com/Liza0809/Vtoroi.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+pelen@Liza_fox MINGW64 /c/Vtoroi (master)
+$ git log --online
+fatal: unrecognized argument: --online
+
+pelen@Liza_fox MINGW64 /c/Vtoroi (master)
+$ git log --oneline
+e0f807e (HEAD -> master, origin/master) Создала файл Rezult.txt
